@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Spel</title>
+    <link rel="stylesheet" href="style.css/reset.css">
+    <link rel="stylesheet" href="style.css/main.css">
+    <link rel="preload" href="font/RubikMaps-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+</head>
+<body>
+    <div id="menu">
+        <h1>Memory Spel</h1>
+        <h2>Zoek al de vriendjes van het spookje voor het dag wordt</h2>
+        <img src="fotos/spook.png" alt="spook" class="spook">
+        <img src="fotos/grond.png" alt="grond" class="grond">
+        <img src="fotos/wolk1.png" alt="wolk1" class="wolk1">
+        <img src="fotos/wolk2.png" alt="wolk2" class="wolk2">
+    
+        
+
+
+        <button id="glowButton-start" class="glow-button">Start Spel</button>
+    </div>
+
+    <p id="timer" style="display:none;">Tijd: <span id="timeLeft">45</span> sec</p>
+
+    
+    <div class="game-container" id="gameContainer" style="display: none;">
+        <div id="attempts">Aantal Pogingen: <span id="attemptsCount">0</span></div>
+    </div>
+
+    <div id="endScreen" style="display: none;">
+        <h2>Gefeliciteerd! Je hebt alle vriendjes gevonden!</h2>
+        <button id="restartButton" class="glow-button">Opnieuw Spelen</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
